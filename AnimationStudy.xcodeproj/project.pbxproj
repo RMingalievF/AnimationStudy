@@ -13,6 +13,7 @@
 		82741C0429463607000295D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82741C0229463607000295D4 /* Main.storyboard */; };
 		82741C0629463608000295D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82741C0529463608000295D4 /* Assets.xcassets */; };
 		82741C0929463608000295D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82741C0729463608000295D4 /* LaunchScreen.storyboard */; };
+		82741C12294636A5000295D4 /* SpringAnimation in Frameworks */ = {isa = PBXBuildFile; productRef = 82741C11294636A5000295D4 /* SpringAnimation */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82741C12294636A5000295D4 /* SpringAnimation in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = AnimationStudy;
+			packageProductDependencies = (
+				82741C11294636A5000295D4 /* SpringAnimation */,
+			);
 			productName = AnimationStudy;
 			productReference = 82741BF929463607000295D4 /* AnimationStudy.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 82741BF029463607000295D4;
+			packageReferences = (
+				82741C10294636A5000295D4 /* XCRemoteSwiftPackageReference "SpringAnimation" */,
+			);
 			productRefGroup = 82741BFA29463607000295D4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -302,9 +310,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = MobileDevOps.AnimationStudy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -330,9 +341,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = MobileDevOps.AnimationStudy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -358,6 +372,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		82741C10294636A5000295D4 /* XCRemoteSwiftPackageReference "SpringAnimation" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/LexDeBash/SpringAnimation.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 0.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		82741C11294636A5000295D4 /* SpringAnimation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 82741C10294636A5000295D4 /* XCRemoteSwiftPackageReference "SpringAnimation" */;
+			productName = SpringAnimation;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 82741BF129463607000295D4 /* Project object */;
 }

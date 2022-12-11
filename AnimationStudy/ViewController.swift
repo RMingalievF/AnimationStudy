@@ -6,14 +6,34 @@
 //
 
 import UIKit
+import SpringAnimation
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    
+    @IBOutlet weak var springView: SpringView!
+    
+    @IBOutlet weak var button: UIButton!
+    
+
+    @IBAction func runButton(_ sender: UIButton) {
+        randomAnimation()
+
+        
     }
-
-
+    
+    func randomAnimation() {
+        var nameAnimation: [String] = []
+        
+        for animation in AnimationPreset.allCases{
+            nameAnimation.append("\(animation)")
+        }
+        let animaation = nameAnimation.shuffled()
+        springView.animation = animaation[0]
+        springView.animate()
+        
+        
+        button.setTitle("Run \(animaation[0])", for: .normal)
+    }
 }
 
