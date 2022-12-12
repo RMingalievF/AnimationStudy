@@ -33,7 +33,7 @@ class ViewController: UIViewController {
         springView.animate()
         
         
-        button.setTitle("Run \(animaation[0])", for: .normal)
+        button.setTitle("Run to \(animaation[0])", for: .normal)
     }
 }
 
