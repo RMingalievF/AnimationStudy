@@ -26,10 +26,11 @@ struct Animation {
     
     static func getAnimation() -> Animation {
         Animation(
-            name: AnimationDataStore.shared.curves.randomElement()?.rawValue ?? "slideLeft",
+            name: AnimationDataStore.shared.animation.randomElement()?.rawValue ?? "slideLeft",
             curve: AnimationDataStore.shared.curves.randomElement()?.rawValue ?? "easeIn",
             force: Double.random(in: 1...1.5),
             duration: Double.random(in: 0.9...1.5),
-            delay: 0.5)
+            delay: 0.5
+        )
     }
 }

@@ -12,31 +12,29 @@ class ViewController: UIViewController {
 
     //MARK: - IB Outlets
     @IBOutlet weak var springView: SpringView!
-    
-    @IBOutlet weak var button: UIButton!
-    
-    
-    @IBOutlet weak var animationLabel: UILabel!
-    
-    
-    
-    
-    @IBAction func runButton(_ sender: UIButton) {
-        randomAnimation()
-        
+    @IBOutlet weak var animationLabel: UILabel! {
+        didSet {
+            animationLabel.text = animation.description
+        }
     }
     
-    func randomAnimation() {
-        var nameAnimation: [String] = []
-        for animation in AnimationPreset.allCases{
-            nameAnimation.append("\(animation)")
-        }
-        let animaation = nameAnimation.shuffled()
-        springView.animation = animaation[0]
+    private var animation = Animation.getAnimation()
+    
+    @IBAction func runButton(_ sender: UIButton) {
+        animationLabel.text = animation.description
+        
+        springView.animation = animation.name
+        springView.curve = animation.curve
+        springView.force = animation.force
+        springView.duration = animation.duration
+        springView.delay = animation.delay
         springView.animate()
         
         
-        button.setTitle("Run to \(animaation[0])", for: .normal)
+        
+        animation = Animation.getAnimation()
+        sender.setTitle("Run to \(animation.name)", for: .normal)
     }
+    
 }
 
