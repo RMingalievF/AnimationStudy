@@ -14,6 +14,8 @@
 		82741C0629463608000295D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82741C0529463608000295D4 /* Assets.xcassets */; };
 		82741C0929463608000295D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82741C0729463608000295D4 /* LaunchScreen.storyboard */; };
 		82741C12294636A5000295D4 /* SpringAnimation in Frameworks */ = {isa = PBXBuildFile; productRef = 82741C11294636A5000295D4 /* SpringAnimation */; };
+		82D1AF172ABA18800077EEF3 /* AnimationDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D1AF162ABA18800077EEF3 /* AnimationDataStore.swift */; };
+		82D1AF192ABA1BC50077EEF3 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D1AF182ABA1BC50077EEF3 /* Animation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		82741C0529463608000295D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		82741C0829463608000295D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		82741C0A29463608000295D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82D1AF162ABA18800077EEF3 /* AnimationDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationDataStore.swift; sourceTree = "<group>"; };
+		82D1AF182ABA1BC50077EEF3 /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,15 +62,65 @@
 		82741BFB29463607000295D4 /* AnimationStudy */ = {
 			isa = PBXGroup;
 			children = (
-				82741BFC29463607000295D4 /* AppDelegate.swift */,
-				82741BFE29463607000295D4 /* SceneDelegate.swift */,
-				82741C0029463607000295D4 /* ViewController.swift */,
-				82741C0229463607000295D4 /* Main.storyboard */,
-				82741C0529463608000295D4 /* Assets.xcassets */,
-				82741C0729463608000295D4 /* LaunchScreen.storyboard */,
 				82741C0A29463608000295D4 /* Info.plist */,
+				82D1AF152ABA12100077EEF3 /* Resurces */,
+				82D1AF142ABA11FF0077EEF3 /* App */,
+				82D1AF132ABA11D70077EEF3 /* StoryBoards */,
+				82D1AF122ABA11AF0077EEF3 /* Services */,
+				82D1AF112ABA118F0077EEF3 /* Models */,
+				82D1AF102ABA11570077EEF3 /* ViewConttrollers */,
 			);
 			path = AnimationStudy;
+			sourceTree = "<group>";
+		};
+		82D1AF102ABA11570077EEF3 /* ViewConttrollers */ = {
+			isa = PBXGroup;
+			children = (
+				82741C0029463607000295D4 /* ViewController.swift */,
+			);
+			path = ViewConttrollers;
+			sourceTree = "<group>";
+		};
+		82D1AF112ABA118F0077EEF3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				82D1AF182ABA1BC50077EEF3 /* Animation.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		82D1AF122ABA11AF0077EEF3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				82D1AF162ABA18800077EEF3 /* AnimationDataStore.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		82D1AF132ABA11D70077EEF3 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				82741C0229463607000295D4 /* Main.storyboard */,
+				82741C0729463608000295D4 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		82D1AF142ABA11FF0077EEF3 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				82741BFC29463607000295D4 /* AppDelegate.swift */,
+				82741BFE29463607000295D4 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		82D1AF152ABA12100077EEF3 /* Resurces */ = {
+			isa = PBXGroup;
+			children = (
+				82741C0529463608000295D4 /* Assets.xcassets */,
+			);
+			path = Resurces;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +202,8 @@
 			files = (
 				82741C0129463607000295D4 /* ViewController.swift in Sources */,
 				82741BFD29463607000295D4 /* AppDelegate.swift in Sources */,
+				82D1AF172ABA18800077EEF3 /* AnimationDataStore.swift in Sources */,
+				82D1AF192ABA1BC50077EEF3 /* Animation.swift in Sources */,
 				82741BFF29463607000295D4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
