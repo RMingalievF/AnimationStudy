@@ -10,21 +10,24 @@ import SpringAnimation
 
 class ViewController: UIViewController {
 
-    
+    //MARK: - IB Outlets
     @IBOutlet weak var springView: SpringView!
     
     @IBOutlet weak var button: UIButton!
     
-
+    
+    @IBOutlet weak var animationLabel: UILabel!
+    
+    
+    
+    
     @IBAction func runButton(_ sender: UIButton) {
         randomAnimation()
-
         
     }
     
     func randomAnimation() {
         var nameAnimation: [String] = []
-        
         for animation in AnimationPreset.allCases{
             nameAnimation.append("\(animation)")
         }
